@@ -42,6 +42,7 @@ class App extends React.Component {
       { id: "2", name: "xam", age: 17 },
       { id: "3", name: "axm", age: 24 },
     ],
+    showPersons: false
   };
 
   // console.log("Switch");
@@ -82,6 +83,10 @@ class App extends React.Component {
       border: "1px solid blue",
       padding: "8px",
       cursor: "pointer",
+      ':hover': {
+        backgroundColor :'lightgreen',
+        color: 'black'
+      }
     };
 
     let persons = null;
@@ -103,6 +108,10 @@ class App extends React.Component {
         </div>
       );
       style.backgroundColor = "red"
+      style[':hover'] = {
+        backgroundColor: 'lightred',
+        color: 'black'
+      }
     }
 
     // let classes = ['red', 'bold'].join(' '); // assign by join with white space
